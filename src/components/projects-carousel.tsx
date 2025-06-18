@@ -60,7 +60,7 @@ export function ProjectCarousel() {
                   Live <SquareArrowOutUpRight className="w-3 h-3" />{" "}
                 </Button>
                 <Button
-                  onClick={() => window.open(item.liveLink, "_blank")}
+                  onClick={() => window.open(item.githubLink, "_blank")}
                   className="h-7 font-bold text-xs"
                 >
                   Github <GithubIcon />
