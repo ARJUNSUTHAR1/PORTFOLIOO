@@ -1,7 +1,7 @@
 import GithubIcon from "@/components/icons/github";
 import LinkedInIcon from "@/components/icons/linkedin";
 import XIcon from "@/components/icons/x";
-import { FileUser, Mail } from "lucide-react";
+import {Mail } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 

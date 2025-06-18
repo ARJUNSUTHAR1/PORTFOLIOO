@@ -1,6 +1,4 @@
 "use client";
-import GithubIcon from "@/components/icons/github";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 // import { GithubGraph } from "./ui/github";
 import { ProjectCarousel } from "./projects-carousel";
@@ -9,6 +7,7 @@ import Skills from "./skills";
 
 export default function ProofofWork() {
   const [theme, setTheme] = useState("light");
+  console.log(theme);
 
   useEffect(() => {
     const localTheme = localStorage.getItem("theme");
