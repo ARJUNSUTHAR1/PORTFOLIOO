@@ -12,7 +12,7 @@ export default function CurrentWork() {
       <Badge className="flex items-center gap-2 rounded-lg py-2 bg-gray-200/40 dark:bg-gray-800/40 text-foreground px-4 mt-2 w-fit ">
         <Circle className="text-gray-500 w-5 h-5 fill-gray-500" />
         <p className="text-xs font-extrabold">
-          Prev Full STack Dev(MERN , NEXT) @Arahan Technology
+          Prev Full STack Dev(MERN , NEXT) @jediteck (USA)
         </p>
       </Badge>
       {/* <Badge className="flex items-center gap-2 rounded-lg py-2 bg-blue-200/40 dark:bg-blue-800/40 text-foreground px-4 mt-2 w-fit ">

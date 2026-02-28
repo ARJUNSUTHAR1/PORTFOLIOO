@@ -4,7 +4,7 @@ import WorkExperience from "@/components/work-exp";
 
 export default function Home() {
   return (
-    <div className="">
+    <div >
       <Top />
       <WorkExperience />
       <ProofofWork />
