@@ -28,7 +28,7 @@ export const projectData = [
     githubLink: "https://github.com/ARJUNSUTHAR1/LINKIO",
   },
   {
-    name: "BrainWave",
+    name: "Neuroflux",
     users: "",
     visitors: "",
     skills: ["NextJs", "Typescript", "TailwindCSS", "Frontend"],
@@ -37,17 +37,6 @@ export const projectData = [
     description: "Sleek, animated UI for an AI chatbot built with modern frontend tools.",
     liveLink: "https://brainui.vercel.app/",
     githubLink: "https://github.com/ARJUNSUTHAR1/BRAINWAVE_UI",
-  },
-  {
-    name: "Textile_Trading",
-    users: "",
-    visitors: "",
-    skills: ["ReactJs", "TailwindCSS","Express","Nodejs","Mongoose","MongoDB","Recoil"],
-    image: trading,
-    bgColor: "red-500",
-    description: "Inventory management app for textile businesses with a clean UI.",
-    liveLink: "https://textile-trading-server.vercel.app/",
-    githubLink: "https://github.com/ARJUNSUTHAR1/TEXTILE_TRADING_UI",
   },
   {
     name: "Veriage",
