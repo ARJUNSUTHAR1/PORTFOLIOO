@@ -3,6 +3,15 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 
 export async function GET() {
+  // Fetch the og.png image from public folder and convert to base64
+  const ogImageBuffer = await fetch(
+    new URL("../../../../public/og.png", import.meta.url)
+  ).then((res) => res.arrayBuffer());
+  
+  // Convert to base64 - Buffer is polyfilled in Next.js Edge runtime
+  const ogImageBase64 = Buffer.from(ogImageBuffer).toString("base64");
+  const ogImage = `data:image/png;base64,${ogImageBase64}`;
+
   // const usdcBuffer = await fetch(new URL('../../../../public/usdc.svg', import.meta.url)).then(
   //     (res) => res.arrayBuffer()
   // );
@@ -33,7 +42,7 @@ export async function GET() {
       <div tw=" bg-[#09090b] text-white w-full p-4 h-full flex items-center justify-center flex-col">
         <img
           tw="flex items-center justify-center border-black w-[20%] mb-6 p-2"
-          src="https://res.cloudinary.com/dazeowi1e/image/upload/f_auto,q_auto/v1/portfolio/d8tdxef7b8kdkiaeqtr7"
+          src={ogImage}
         />
         <div tw="text-[3rem]">Arjun Suthar</div>
         <div tw="">Passionate Frontend Developer</div>
